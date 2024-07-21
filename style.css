@@ -1,0 +1,355 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: black;
+    color: #fff;
+
+}
+
+.bg{
+    width: 100%;
+    background-image: url("https://blackscreen.space/images/pro/black-screen_39.png");
+    background-size: 90%;
+    height: 80vh;
+    
+}
+.logo{
+    width: 70px;   
+    margin-left: 40px; 
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:  rgb(27, 27, 27);
+}
+.n-list{
+    margin-left: auto;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    margin-left: auto;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.start{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 140px;
+    font-style: oblique;
+}
+.nameu{
+    margin-top: 50%;
+    font-size: 20px;
+    padding-left: 156px;
+}
+.name{
+    color: red;
+    font-size: 50px;
+}
+
+
+.pto{
+    padding-left: 10%;
+    width: 70%;
+}
+
+
+
+/* ----------------about--------------- */
+
+
+
+.about-cont{
+    padding-top: 70px;
+}   
+.about-row{
+    display: flex;
+    margin-left: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+.abc1{
+    flex-basis: 30%;
+}
+.abc1 img{
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 70px;
+}
+.abc2{
+    flex-basis: 65%;
+}
+.st{
+    font-size: 65px;
+    font-weight: 600;
+    color: #fff;
+}
+.tt{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tl{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tl::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.al.tl::after{
+    width: 50%;
+}
+.tc ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tc ul li span{
+    color: #fa0553;
+    font-size: 14px;
+}
+.tc{
+    display: none;
+}
+.tc.at{
+    display: block;
+}
+
+
+/* --------------internships---------- */
+
+
+.intern-list{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.intern-list h2{
+    padding-bottom: 10px;
+}
+.intern{
+    padding-top: 70px;
+    padding-left: 40px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+    padding-bottom: px;
+}
+.intern-img{
+    width: 60%;
+    height: 80%;
+    justify-content: space-around;
+}
+
+.intern-col1{
+    flex-basis: 27%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 15px;
+    align-content: center;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.intern-col2{
+    flex-basis: 27%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 15px;
+    align-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.intern-img{
+    width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+/* ------------certificates------------ */
+
+
+
+.cert{
+    padding-top: 70px;
+    padding-left: 40px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+    padding-bottom: 20px;
+
+}
+.cer{
+    width: 80%;
+    height: 80%;
+    justify-content: space-around;
+}
+.cert-list{
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-around;
+    text-align: center;
+}
+.cert-col1{
+    flex-basis: 31%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 15px;
+    align-content: center;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.cert-col2{
+    flex-basis: 31%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 15px;
+    align-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.cert-col3{
+    flex-basis: 31%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 15px;
+    align-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* -----------education------------ */
+
+
+.edu{
+    padding-top: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 40px;
+
+}
+.edu-cont{
+    margin-top: 80px;
+    text-align: center;
+}
+.edu-row{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1%;
+}
+.edu-row h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+.edu-col1{
+    flex-basis: 31%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 15px;
+    align-content: center;
+    height: 250px;
+}
+.edu-col2{
+    flex-basis: 31%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 15px;
+    align-content: center;
+}
+.edu-col3{
+    flex-basis: 31%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 15px;
+    align-content: center;
+}
+.edu-course{
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.edu-logo{
+    width: 80px;
+    margin-top: 10px;
+}
+.edu-about{
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+}
+.edu-place{
+    margin-top: 15px;
+    font-size: 13px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+/* contact */
+
+.contact-cont h1{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.contact-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+}
+.contact-logo{
+    width: 30px;
+    border-radius: 5px;
+    margin-left: 20px;
+    align-items: center;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;
+}
+.copyright i{
+    padding-right: 8px;
+    align-content: center;
+}
+.copyright span{
+    color: #fa0553;
+}
