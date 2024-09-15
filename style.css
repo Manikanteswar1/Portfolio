@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+p{
+    padding-left: 5px;
+    padding-right: 5px;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -12,7 +16,9 @@ body{
     color: #fff;
 
 }
-
+a{
+    color: #fa0553;
+}
 .bg{
     width: 100%;
     background-image: url("https://blackscreen.space/images/pro/black-screen_39.png");
@@ -101,34 +107,34 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
     margin-bottom: 5%;
 }
-.abc1{
+.about-col1{
     flex-basis: 30%;
 }
-.abc1 img{
+.about-col1 img{
     width: 100%;
     border-radius: 10px;
     padding-top: 70px;
 }
-.abc2{
+.about-col2{
     flex-basis: 65%;
 }
-.st{
+.about-title{
     font-size: 65px;
     font-weight: 600;
     color: #fff;
 }
-.tt{
+.about-tab-title{
     display: flex;
     margin: 20px 0 40px;
 }
-.tl{
+.about-tab-link{
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
 }
-.tl::after{
+.about-tab-link::after{
     content: '';
     width: 0;
     height: 3px;
@@ -138,21 +144,21 @@ nav ul li a:hover::after{
     bottom: -8px;
     transition: 0.5s;
 }
-.al.tl::after{
+.about-active-link::after{
     width: 50%;
 }
-.tc ul li{
+.about-tab-content ul li{
     list-style: none;
     margin: 10px 0;
 }
-.tc ul li span{
+.about-tab-content ul li span{
     color: #fa0553;
     font-size: 14px;
 }
-.tc{
+.about-tab-content{
     display: none;
 }
-.tc.at{
+.about-tab-content.about-active-tab{
     display: block;
 }
 
@@ -223,8 +229,9 @@ nav ul li a:hover::after{
 }
 .cer{
     width: 80%;
-    height: 80%;
+    height: auto;
     justify-content: space-around;
+    padding-bottom: 10px;
 }
 .cert-list{
     display: flex;
@@ -232,12 +239,14 @@ nav ul li a:hover::after{
     justify-content: space-around;
     text-align: center;
 }
+.cert-list h2{
+    padding-bottom: 10px;
+}
 .cert-col1{
     flex-basis: 31%;
     background-color: rgb(27, 27, 27);
     border-radius: 15px;
     align-content: center;
-    height: auto;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -258,6 +267,68 @@ nav ul li a:hover::after{
     padding-bottom: 20px;
 }
 
+/* -----------Projects------------ */
+
+
+
+.project-icon{
+    padding-top: 100px;
+    padding-left: 40px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+    padding-bottom: 20px;
+
+}
+.proj-img{
+    width: 80%;
+    height: auto;
+    padding-bottom: 10px;
+    justify-content: space-around;
+}
+.proj-list{
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-around;
+    text-align: center;
+}
+.proj-list h2{
+    padding-bottom: 10px;
+}
+.proj-col1{
+    flex-basis: 23%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 15px;
+    align-content: center;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.proj-col2{
+    flex-basis: 23%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 15px;
+    align-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.proj-col3{
+    flex-basis: 23%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 15px;
+    align-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.proj-col4{
+    flex-basis: 23%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 15px;
+    align-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 /* -----------education------------ */
 

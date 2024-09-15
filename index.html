@@ -17,6 +17,7 @@
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#internships">INTERNSHIPS</a></li>
                     <li><a href="#certificates">CERTIFICATES</a></li>
+                    <li><a href="#my_Projects">PROJECTS</a></li>
                     <li><a href="#education">EDUCATION</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
@@ -26,7 +27,7 @@
                     <img src="im/my.jpg" class="pto">
                 </div>
                 <div>
-                <p class="nameu">Hi, I'm </pp>
+                <p class="nameu"> Hi, I'm </p>
                 <h2 class="name">
                     Manikanta
                 </h2>
@@ -41,22 +42,22 @@
     <div id="about">
         <div class="about-cont">
             <div class="about-row">
-                <div class="abc1">
+                <div class="about-col1">
                     <img src="im/computer_image.webp">
                 </div>
-                <div class="abc2">
-                    <h1 class="st">About</h1>
-                    <p>As a final-year CSE student at SRM University, I’m on an exciting journey through the realms of technology and innovation. 
+                <div class="about-col2">
+                    <h1 class="about-title">About</h1>
+                    <p>As a final-year CSE student at SRM University, I'm on an exciting journey through the realms of technology and innovation. 
                         My passion for web development and machine learning has led me to explore cutting-edge solutions, culminating in a recent paper on heart attack detection using machine learning.
                         Each step of my academic path is driven by curiosity and a desire to make a meaningful impact in the world of tech.</p>
 
-                        <div class="tt">
-                            <p class="tl al" onclick="opentab('skills')">Skills</p>
-                            <p class="tl" onclick="opentab('languages')">languages</p>
-                            <p class="tl" onclick="opentab('projects')">projects</p>
+                        <div class="about-tab-title">
+                            <p class="about-tab-link about-active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="about-tab-link" onclick="opentab('languages')">languages</p>
+                            <p class="about-tab-link" onclick="opentab('projects')">projects</p>
                         </div>
 
-                        <div class="tc at" id="skills">
+                        <div class="about-tab-content about-active-tab" id="skills">
                             <ul>
                                 <li><span>web development</span><br>building web applications</li>
                                 <li><span>---</span><br>----------</li>
@@ -64,7 +65,7 @@
                             </ul>
                         </div>
 
-                        <div class="tc" id="languages">
+                        <div class="about-tab-content " id="languages">
                             <ul>
                                 <li><span>C/C++</span><br>----------</li>
                                 <li><span>python</span><br>----------</li>
@@ -72,7 +73,7 @@
                             </ul>
                         </div>
 
-                        <div class="tc" id="projects">
+                        <div class="about-tab-content " id="projects">
                             <ul>
                                 <li><span>ATM Interface</span><br>Using JAVA and PHP</li>
                                 <li><span>Front-end website</span><br>Using HTML and CSS</li>
@@ -118,8 +119,9 @@
             <div class="cert-col1">
                 <img src="im/Ai challenge.png" class="cer">
                 <h2>Microsoft AI skills challenge.</h2>
-                <p>
-                    about certification
+                <p>  
+                    The Microsoft AI Skills Challenge Certification recognizes participants who complete AI learning modules,
+                     validating foundational AI knowledge and skills for development and implementation.
                 </p>
                 <a href="#">learn more</a>
             </div>
@@ -128,7 +130,9 @@
                 <img src="im/Micro.png" class="cer">
                 <h2>Micro-Certification</h2>
                 <p>
-                    about certification
+                    The Welcome to ServiceNow Micro Certification offers a basic introduction to navigating 
+                    and using the ServiceNow platform, covering key features and functionalities. 
+                    
                 </p>
                 <a href="#">learn more</a>
             </div>
@@ -137,10 +141,63 @@
                 <img src="im/IEEE.png" class="cer">
                 <h2>IEEE</h2>
                 <p>
-                    about certification
+                    The Heart Attack Detection Using Machine Learning Certification validates expertise in applying machine learning algorithms 
+                    like Logistic Regression, Decision Trees, and SVM to detect heart attacks.
+                    It demonstrates proficiency in data pre-processing, model training, and accuracy evaluation for healthcare applications.
                 </p>
                 <a href="#">learn more</a>
             </div>
+        </div>
+    </div>
+</div>
+
+<div id="my_Projects">
+    <div class="project-container">
+        <h1 class="project-icon"><i class="fa-solid fa-award"></i> PROJECTS</h1>
+        <div class="proj-list">
+            <div class="proj-col1">
+                <img src="im/Simon_Game.png" class="proj-img">
+                <h2>SIMON GAME</h2>
+                <p>
+                    The Simon Game is a classic memory-based game where players must repeat an increasingly complex sequence of colors and sounds. 
+                    <!-- The goal is to remember and reproduce the pattern correctly as the game progresses. -->
+                </p>
+                <a href="#">Link</a>
+            </div>
+
+            <div class="proj-col2">
+                <img src="im/Cake_photo.png" class="proj-img">
+                <h2>CAKE ORDERING WEBSITE</h2>
+                <p>
+                    A cake ordering website built using only HTML and CSS provides a static interface
+                     where users can view cake options and customize their orders. 
+                     <!-- It features visually appealing layouts and basic interactivity like forms -->
+                    <!-- , but lacks functionality like dynamic data handling or backend integration for processing orders. -->
+                </p>
+                <a href="#">Link</a>
+            </div>
+
+            <div class="proj-col3">
+                <img src="im/drum_kit.png" class="proj-img">
+                <h2>DRUM KIT</h2>
+                <p>
+                    This Drum Kit Project is a simple web-based application built using HTML, CSS, and JavaScript to play different sound. 
+                    <!-- It allows users to play different drum sounds either by clicking on the drum buttons or by pressing specific keys on the keyboard. -->
+                </p>
+                <a href="#">link</a>
+            </div>
+
+             <div class="proj-col4">
+                <img src="im/TIC TAC TEO.png" class="proj-img">
+                <h2>TIC TAC TEO</h2>
+                <p>
+                    This Tic Tac Toe Game is a Python-based application that allows for both single-player (against the computer) and 
+                    <!-- multiplayer modes. Players take turns placing "X" or "O" on a 3x3 board.  -->
+                    <!-- The game uses a minimax algorithm to allow the computer to make optimal moves.  -->
+                </p>
+                <a href="#">link</a>
+            </div>
+            
         </div>
     </div>
 </div>
@@ -210,17 +267,17 @@
 
 
     <script>
-        var tablinks = document.getElementsByClassName("tl");
-        var tabcontents = document.getElementsByClassName("tc");
+        var tablinks = document.getElementsByClassName("about-tab-link");
+        var tabcontents = document.getElementsByClassName("about-tab-content");
         function opentab(tabname){
             for(tablink of tablinks){
-                tablink.classList.remove("al");
+                tablink.classList.remove("about-active-link");
             }
             for(tabcontent of tabcontents){
-                tabcontent.classList.remove("at");
+                tabcontent.classList.remove("about-active-tab");
             }
-            event.currentTarget.classList.add("al");
-            document.getElementById(tabname).classList.add("at");
+            event.currentTarget.classList.add("about-active-link");
+            document.getElementById(tabname).classList.add("about-active-tab");
         }
     </script>
     
