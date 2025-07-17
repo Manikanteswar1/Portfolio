@@ -145,6 +145,40 @@ nav ul li a:hover {
     border-color: rgba(74, 158, 255, 0.5);
 }
 
+
+.resume-section {
+    margin-top: 30px;
+    padding-left: 156px;
+}
+
+.resume-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #4a9eff, #357abd);
+    color: white !important;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(74, 158, 255, 0.4);
+    border: none;
+    cursor: pointer;
+}
+
+.resume-btn:hover {
+    background: linear-gradient(135deg, #6bb6ff, #4a9eff);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(74, 158, 255, 0.5);
+}
+
+.resume-btn i {
+    font-size: 14px;
+}
+
+
 /* ----------------about--------------- */
 
 .about-cont {
