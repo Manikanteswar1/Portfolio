@@ -14,8 +14,8 @@
         <div class="container">
             <nav>
                 <img src="https://www.48hourslogo.com/48hourslogo_data/2019/10/15/89992_1571099696.png" class="logo">
-                <ul class="n-list">
-                    <li><a href="#">HOME</a></li>
+                <ul class="n-list" id="navLinks">
+                    <li><a href=" #">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#internships">INTERNSHIPS</a></li>
                     <li><a href="#certificates">CERTIFICATES</a></li>
@@ -23,6 +23,12 @@
                     <li><a href="#education">EDUCATION</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
+                <div class="hamburger-menu" id="hamburgerIcon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+
             </nav>
             <div class="start">
                 <div>
@@ -57,12 +63,15 @@
                 </div>
                 <div class="about-col2">
                     <h1 class="about-title">About</h1>
-                    <p>As a Computer Science & Engineering graduate from SRM University (Class of 2025), I'm passionate
-                        about building innovative tech solutions. My journey has been driven by a strong interest in web
-                        development, culminating in a recent React-based Swiggy clone project that showcases my frontend
-                        skills. I also co-authored a research paper on heart attack detection using machine learning,
-                        reflecting my drive to apply technology to real-world problems. With a focus on clean code and
-                        impactful projects, I'm excited to contribute to the evolving tech landscape.</p>
+                    <p>As a Computer Science & Engineering graduate from SRM University AP (Class of 2025), I’m passionate
+                        about crafting impactful web applications that solve real-world problems. My journey in tech has
+                        led me to build dynamic React-based projects like a Swiggy clone and a Netflix-style movie
+                        recommendation platform with Firebase authentication—demonstrating my skills in modern frontend
+                        development. I also co-authored an IEEE research paper on heart attack detection using machine
+                        learning, reflecting my commitment to blending innovation with societal impact. I believe in
+                        writing clean, maintainable code and continuously pushing boundaries in both design and
+                        functionality. I’m eager to contribute to the ever-evolving tech ecosystem through thoughtful,
+                        user-centric solutions.</p>
 
                     <div class="about-tab-title">
                         <p class="about-tab-link about-active-link" onclick="opentab('skills')">Skills</p>
@@ -90,12 +99,14 @@
 
                     <div class="about-tab-content " id="projects">
                         <ul>
+                            <li><span><a href="https://netflixgpt-4b82a.web.app/" target="_blank">Netflex GPT</a>
+                                </span><br>Using React</li>
                             <li><span><a href="https://food-delivery-7jnr.onrender.com/" target="_blank">Swiggy
                                         Clone</a>
                                 </span><br>Using React</li>
                             <li><span><a href="https://manikanteswar1.github.io/Simon_game/" target="_blank">Simon
                                         Game</a></span><br>Using HTML CSS and JavaScript</li>
-                            <li><span><a href="https://food-delivery-7jnr.onrender.com/" target="_blank">Youtube
+                            <li><span><a href="https://netflixgpt-4b82a.web.app/" target="_blank">Youtube
                                         Clone</a>
                                 </span><br>Using React</li>
                             <li><span><a href="https://github.com/Manikanteswar1/Mini-voice-Assistant"
@@ -205,6 +216,17 @@
             <div class="proj-list">
 
                 <div class="proj-col">
+                    <img src="./im/NetflixGpt_Logo.png" class="proj-img" />
+                    <h2>Netflix GPT</h2>
+                    <p class="description">
+                        Netflix GPT is a smart movie suggestion app built with React that uses Gemini and TMDB APIs to
+                        recommend movies,
+                        with Firebase authentication and in-page trailer playback.
+                    </p>
+                    <a href="https://netflixgpt-4b82a.web.app/" target="_blank">Live Demo</a>
+                </div>
+
+                <div class="proj-col">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ4BeSJIyFv1FWGQVpCt0jpEozni4t1bHOZg&s"
                         class="proj-img" />
                     <h2>SWIGGY CLONE</h2>
@@ -223,7 +245,7 @@
                         browse, and watch videos like on YouTube. The app includes features like a sidebar menu, search
                         bar, and dynamic video pages.
                     </p>
-                    <a href="https://github.com/Manikanteswar1" target="_blank">Live Demo</a>
+                    <a href="https://netflixgpt-4b82a.web.app/" target="_blank">Live Demo</a>
                 </div>
 
                 <div class="proj-col">
@@ -246,6 +268,18 @@
                         computer.
                     </p>
                     <a href="https://github.com/Manikanteswar1/Tic-Tac-Toe" target="_blank">View Code</a>
+                </div>
+
+                <div class="proj-col">
+                    <img src="im/Cake_photo.png" class="proj-img">
+                    <h2>CAKE ORDERING WEBSITE</h2>
+                    <p class="description">
+                        A cake ordering website built using only HTML and CSS provides a static interface
+                        where users can view cake options and customize their orders.
+                        <!-- It features visually appealing layouts and basic interactivity like forms -->
+                        <!-- , but lacks functionality like dynamic data handling or backend integration for processing orders. -->
+                    </p>
+                    <a href="https://manikanteswar1.github.io/Cake-ordering-websitr/" target="_blank">Link</a>
                 </div>
 
             </div>
@@ -306,8 +340,8 @@
                         class="contact-logo">
                 </a>
                 <!-- <a href="https://www.instagram.com/manikanta___111/" target="_blank"> 
-                <img src="https://res.cloudinary.com/dil7ytaak/image/upload/v1721411465/zar1xkdqrhdff8coho0m.jpg"  class="contact-logo">
-            </a> -->
+                    <img src="https://res.cloudinary.com/dil7ytaak/image/upload/v1721411465/zar1xkdqrhdff8coho0m.jpg"  class="contact-logo">
+                </a> -->
 
             </div>
 
@@ -323,18 +357,51 @@
 
 
     <script>
-        var tablinks = document.getElementsByClassName("about-tab-link");
-        var tabcontents = document.getElementsByClassName("about-tab-content");
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("about-active-link");
+        document.addEventListener('DOMContentLoaded', function () {
+            // Your opentab function
+            var tablinks = document.getElementsByClassName("about-tab-link");
+            var tabcontents = document.getElementsByClassName("about-tab-content");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("about-active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("about-active-tab");
+                }
+                // event.currentTarget is defined because opentab is called from an onclick attribute
+                event.currentTarget.classList.add("about-active-link");
+                document.getElementById(tabname).classList.add("about-active-tab");
             }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("about-active-tab");
+
+            // Make opentab globally accessible if it's called from onclick attributes in HTML
+            window.opentab = opentab;
+
+
+            // Hamburger menu functionality
+            const hamburgerIcon = document.getElementById('hamburgerIcon');
+            const navLinks = document.getElementById('navLinks');
+
+            // Add a check to ensure elements exist before trying to use them
+            if (hamburgerIcon && navLinks) {
+                hamburgerIcon.addEventListener('click', function () {
+                    navLinks.classList.toggle('active');
+                    hamburgerIcon.classList.toggle('active');
+                });
+
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', function () {
+                        // Check if the nav menu is currently open before closing
+                        if (navLinks.classList.contains('active')) {
+                            navLinks.classList.remove('active');
+                            hamburgerIcon.classList.remove('active');
+                        }
+                    });
+                });
+            } else {
+                console.error("Error: Could not find hamburgerIcon or navLinks. Check your HTML IDs.");
             }
-            event.currentTarget.classList.add("about-active-link");
-            document.getElementById(tabname).classList.add("about-active-tab");
-        }
+        });
     </script>
 
 </body>
