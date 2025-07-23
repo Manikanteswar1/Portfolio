@@ -13,7 +13,7 @@
     <div class="bg">
         <div class="container">
             <nav>
-                <img src="https://www.48hourslogo.com/48hourslogo_data/2019/10/15/89992_1571099696.png" class="logo">
+                <img src="./im/MK_Logo.png" class="logo">
                 <ul class="n-list" id="navLinks">
                     <li><a href=" #">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
@@ -43,7 +43,7 @@
                         full stack developer
                     </p>
                     <div class="resume-section">
-                        <a href="im/resume.pdf" class="resume-btn" id="downloadResume" target="_blank"
+                        <a href="im/Manikanta_Resume_9.pdf" class="resume-btn" id="downloadResume" target="_blank"
                             rel="noopener noreferrer">
                             <i class="fas fa-file-pdf"></i>
                             View Resume
@@ -356,54 +356,10 @@
 
 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Your opentab function
-            var tablinks = document.getElementsByClassName("about-tab-link");
-            var tabcontents = document.getElementsByClassName("about-tab-content");
-
-            function opentab(tabname) {
-                for (tablink of tablinks) {
-                    tablink.classList.remove("about-active-link");
-                }
-                for (tabcontent of tabcontents) {
-                    tabcontent.classList.remove("about-active-tab");
-                }
-                // event.currentTarget is defined because opentab is called from an onclick attribute
-                event.currentTarget.classList.add("about-active-link");
-                document.getElementById(tabname).classList.add("about-active-tab");
-            }
-
-            // Make opentab globally accessible if it's called from onclick attributes in HTML
-            window.opentab = opentab;
-
-
-            // Hamburger menu functionality
-            const hamburgerIcon = document.getElementById('hamburgerIcon');
-            const navLinks = document.getElementById('navLinks');
-
-            // Add a check to ensure elements exist before trying to use them
-            if (hamburgerIcon && navLinks) {
-                hamburgerIcon.addEventListener('click', function () {
-                    navLinks.classList.toggle('active');
-                    hamburgerIcon.classList.toggle('active');
-                });
-
-                navLinks.querySelectorAll('a').forEach(link => {
-                    link.addEventListener('click', function () {
-                        // Check if the nav menu is currently open before closing
-                        if (navLinks.classList.contains('active')) {
-                            navLinks.classList.remove('active');
-                            hamburgerIcon.classList.remove('active');
-                        }
-                    });
-                });
-            } else {
-                console.error("Error: Could not find hamburgerIcon or navLinks. Check your HTML IDs.");
-            }
-        });
+    
+    <script src="index.js">
+       
     </script>
-
 </body>
 
 </html>
